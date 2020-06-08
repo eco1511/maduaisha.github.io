@@ -1,0 +1,324 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+nav a:hover{
+  color: orange;
+}
+
+li{
+  list-style: none;
+}
+
+header {
+   display: inline;
+}
+
+nav {
+  background-color: #f7ff87;
+  position: sticky;
+  padding: 5px;
+  top: 0px;
+}
+
+nav ul{
+  padding: 30px 100px;
+}
+nav li{
+   list-style-type: none;
+   margin-right: 10px;
+   display: inline;
+}
+nav img{
+  width: 50px;
+  float:left;
+  padding: 10px 20px;
+}
+
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: body;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/*---Beranda---*/
+.konten_beranda {
+    display:grid;
+    grid-template-columns: 40% auto;
+    padding: 15em 10em;
+}
+
+.konten_beranda img{
+  width: 250px;
+}
+
+.konten_beranda h1{
+  padding-top: 100px;
+  color: #fcec03;
+  font-size: 3em;
+  text-shadow: 1px 1px 2px black;
+}
+
+.klik_produk {
+  padding-top: 50px;
+}
+
+.klik_produk a{
+  font-size: 2em;
+  background-color: orange;
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+}
+
+.klik_produk a:hover{
+  background-color: white;
+  color: orange;
+  border: 2px solid orange;
+}
+
+/*produk*/
+
+#produk{
+    text-align: center;
+    background-color: #fcec03;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px #ffffff;
+}
+
+#produk h2{
+  padding: 20px;
+  font-size: 50px;
+}
+
+.konten_produk {
+    display:grid;
+    list-style-type:none;
+    margin:0;
+    padding:2em 0 5em 0;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+.konten_produk img{
+  width: 200px;
+}
+
+
+.deskripsi {
+  padding: 30px 80px 0px 80px;
+  text-align: justify;
+  font-size: 0.5em;
+}
+/*--tentang--*/
+
+.konten_tentang {
+  display:grid;
+  grid-template-columns: 65% auto;
+  padding: 5em 10em 15em 0;
+}
+
+#tentang h2{
+  text-align: center;
+  padding-top: 90px;
+  font-size: 50px;
+}
+
+#tentang{
+    text-align: center;
+    text-shadow: 2px 2px 4px #ffffff;
+    font-size: 1.4em;
+}
+
+.konten_tentang img {
+  width: 400px;
+  padding: 50px;
+}
+
+.artikel {
+  padding-left: 100px;
+}
+
+.artikel p{
+  text-indent: 2em;
+  text-align: justify;
+}
+
+/*Kontak*/
+
+.kontak_kotak {
+  background-color: #fcec03;
+  text-shadow: 2px 2px 4px #ffffff;
+}
+
+ .kontak_kotak h2 {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  font-size: 50px;
+}
+
+.konten_kontak {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: 65% auto;
+  padding: 5em 5em 11em;
+}
+
+.side_kanan {
+  border-radius: 20px;
+  background-color: white;
+}
+
+.hubungi {
+  border-radius: 20px;
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+
+.konten_kontak img{
+  width: 30px;
+  height: 30px;
+
+}
+
+.side_kanan img{
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  border: 5px solid black;
+}
+
+.hubungi_kotak {
+  padding: 200px;
+  font-size: 30px;
+}
+
+.side_kontak {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  padding: 30px;
+}
+
+.hubungi_kotak{
+  padding: 50px;
+}
+
+.hubungi_kotak p{
+  padding-bottom: 15px;
+}
+
+/*--foooter---*/
+
+footer {
+background-color: #f7ff87;
+text-align: center;
+font-size: 20px;
+padding: 30px;
+ box-shadow: 4px 0px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*Responsiv*/
+
+@media screen and (max-width: 600px) {
+
+  .konten_beranda {
+    list-style-type:none;
+    margin:0;
+    padding:2em 0 5em 0;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .konten_beranda img{
+     width: 150px;
+     padding-top: 50px;
+  }
+
+  .konten_produk {
+      display:grid;
+      list-style-type:none;
+      margin:0;
+      padding:2em 0 5em 0;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+  }
+
+  .konten_produk img{
+     width: 150px;
+  }
+
+  .konten_tentang {
+    list-style-type:none;
+    margin: 0;
+    padding:2em 0 5em 0;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    font-size: 10px;
+  }
+
+.konten_tentang article{
+  font-size: 15px;
+  padding: 0 10px 0 10px;
+  margin: auto;
+}
+
+.konten_tentang img{
+   width: 150px;
+}
+
+
+  .konten_kontak {
+    list-style-type:none;
+    margin:0;
+    padding:1em 0 5em 0;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .hubungi_kotak {
+    font-size: 15px;
+  }
+
+aside{
+  padding-top: 10px;
+}
+
+footer {
+  font-size: 15px;
+}
+
+header {
+  display: inline;
+}
+
+
+}
